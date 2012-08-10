@@ -1263,7 +1263,7 @@ background-color:#f3efe6;
     top: 50%;
     left: 50%;
     width:24em;
-    height:18em;
+   
     margin-top: -9em; /*set to a negative number 1/2 of your height*/
     margin-left: -12.5em; /*set to a negative number 1/2 of your width*/
     border: 1px solid #ccc;
@@ -1288,7 +1288,7 @@ background-color:#f3efe6;
     width: 385px;
 }
 
-.logininput
+#logininput
 {
 	height: 26px;
     margin-left: 4.4em;
@@ -1296,6 +1296,17 @@ background-color:#f3efe6;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px
 }
+
+#logininputPassword
+{
+	height: 26px;
+    margin-left: 4.4em;
+    width: 16em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px
+}
+
+
 .loginBtn-link {
    	border: 1px solid #008C4A;
    	width: 105px;
@@ -1369,7 +1380,30 @@ a.forgot:hover
 :-moz-placeholder {  
    color: #8b8b8b;  
 }
-placeholder {
+.placeholder {
    color: #8b8b8b;
 }
+<!-------- java Script Classes .................>
+label 
+{ 
+	/*width: 10em; 
+	float: left;*/
+	 
+}
+
+label.error 
+{ 
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	margin-left:73px;
+	/*<!--left: 71px;-->*/
+	/*position: absolute;
+    width: 120px; */
+   /* margin-top: 36px;*/
+   
+}
+
+
+
 

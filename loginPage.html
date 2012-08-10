@@ -3,7 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Login page</title>
-<link rel="stylesheet" type="text/css" href="trakingTool.css"> 
+<script type="text/javascript" src="js/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="js/jqueryFormValidation.js"></script>
+<script type="text/javascript" src="js/ValidationRules.js"></script>
+<link rel="stylesheet" type="text/css" href="trakingTool.css" > 
 
 </head>
 
@@ -13,23 +16,26 @@
 	<div id="lognHd"> Login </div>
 	<div class="loginLine"></div> 
 	<div style="margin-top:61px"> 
-    <form name="login" action="#">   
+    
+	<form name="login" action="#" id="loginForm">   
 
-	<input type="text" class="logininput" name="userName" placeholder="Username"> 
-    <br/> <br/>
+	<input type="text" id="logininput" name="userName" placeholder="Username" class="required" > 
+    <br/>  <br/>
    <!-- <p style="color:#F00; margin-left:74px;"> Enter your Name </p>  -->
     
-	<input type="password" class="logininput" name="password" placeholder="Password" > <br/>
+	<input type="password" id="logininputPassword" name="password" placeholder="Password" class="required" > 
+    
      <!--<p style="color:#F00; margin-left:74px;"> Enter Your Password  </p> --> 
     
-	<a href="#" class="loginBtn-link"> Login </a> <br/>  <br/>
+	<!--<a href="#" class="loginBtn-link"> Login </a> <br/>  <br/>-->
+    <input class="loginBtn-link" type="submit" value="Login"/> <br/><br/>
 
 	<!--<div id="forgetUsername"> <a class="forgot" href="#"> Forgot my username/password </a> </div>-->
  	</form>	
 </div>
 <br/>
 <br/>
-</div>
+</div>`
   
 
 
