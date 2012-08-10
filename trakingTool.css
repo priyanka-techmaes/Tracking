@@ -1,0 +1,1375 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+background-color:#f3efe6;
+margin:0;
+padding:0
+}
+
+
+
+#mainPgBg 
+{
+	/*background-color:#f3efe6;
+	overflow:inherit;*/
+}
+
+body #launchBar
+{
+	background-color: #020202;
+    height: 17px;
+    
+    position: relative;
+    
+	
+}
+
+#singOut
+{
+	color: #999;
+    float: right;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    position: relative;
+    right: 75px;
+    text-decoration: none;
+    top: -5px;
+}
+
+a.signout:link {
+    color: #999;
+	text-decoration:none;
+}
+a.signout:visited
+{
+	text-decoration:underline;
+	color: #999;
+}
+
+a.signout:hover 
+{
+	text-decoration:underline;
+	color:#000;
+}
+
+a.signout:active
+{
+	text-decoration:underline;
+	color: #000;
+}
+
+
+/*<!--#myCanvas{
+	height: 50px;
+    left: 23%;
+    margin-right: 2%;
+    position: relative;
+    top: 10px;
+    width: 100px;
+}-->*/
+
+.logo
+{
+	color: #5F2A3D;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 0;
+    position: relative;
+    right: 0;
+    top: -25px;
+}
+
+#parentDiv
+{
+	
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 51px;
+    width: 937px;
+}
+
+#parentDivAddTask
+{
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:-516px; 
+    width: 950px;
+    z-index: -1;
+}
+
+
+#whieBgMain
+{	
+	position: relative;
+	width:880px;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+	
+}
+
+.shadow {
+  	-moz-box-shadow:    1px 1px 10px #c6c4c4;
+  	-webkit-box-shadow: 1px 1px 10px  #c6c4c4;
+  	box-shadow:         1px 1px 10px #c6c4c4;
+	background-color: rgb(255,255,255); 
+  
+  /*For IE 8
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=0, Color='#000000')";
+ 
+	 -ms-filter: "progid:DXImageTransform.Microsoft.dropshadow(OffX=10, OffY=10, Color='#33000000')"; 
+	
+	 Needed for IEs 
+	 zoom: 1;
+      filter:
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=0,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=45,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=90,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=135,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=180,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=225,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=270,strength=5),
+          progid:DXImageTransform.Microsoft.Shadow(color=#c6c4c4,direction=315,strength=5);*/
+          
+  
+}
+
+ 
+
+
+.addTaskBtn-link {
+   	border: 1px solid #008C4A;
+   	margin-left: -145px;
+    position: fixed;
+   width: 105px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers*/ 
+	background: #00a14b; /* Old browsers */
+	background: -moz-linear-gradient(top, #00a14b 0%, #009c4d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a14b), color-stop(100%,#009c4d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a14b', endColorstr='#009c4d',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-shadow: 1px 1px 1px #1e4c39;
+	text-align:center; 
+	text-decoration: none;
+	padding: 10px 2px ;
+	top:96px;
+	z-index:9999;  
+	
+}
+.addTaskBtn-link:hover {
+    
+    border: solid 1px #014625;
+	text-decoration: none;
+	/-moz-box-shadow:    0px 0px 3px 2px #CCC;
+  	-webkit-box-shadow: 0px 0px 3px 2px #ccc;
+ 	 box-shadow:         0px 0px 3px 2px #ccc;
+	 
+     
+	
+ 
+}
+.addTaskBtn-link:active {
+    border: solid 1px #008C4A;
+	text-decoration: none;
+}
+
+
+
+
+#hdText
+{
+	color: #030303;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    left: 36px;
+    position: relative;
+    top: 11px;
+    width: 200px;
+}
+
+.userNameBg
+{
+	position:relative;
+	text-align:center;
+	top:-19px;
+	left:1px;
+	-moz-border-radius: 1.8px;
+	-webkit-border-radius: 1.8px;
+	border-radius: 1.8px; /* future proofing */
+	-khtml-border-radius: 2px; /* for old Konqueror browsers */
+	padding:4px;
+	border:1px solid #c4c3c3;
+	
+	
+	
+}
+a.uName:link
+{
+	background-color:#c4c3c3;
+	text-decoration:none;
+	
+}
+a.uName:visited
+{
+	background-color:#c4c3c3;
+}
+a.uName:hover
+{
+	border:1px solid #9e9e9e;
+	background-color:#adadad;
+	
+	/*-moz-box-shadow:    0px 0px 3px 2px #CCC;
+  -webkit-box-shadow: 0px 0px 3px 2px #ccc;
+  box-shadow:         0px 0px 3px 2px #ccc;*/
+}
+
+
+
+
+.users
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:bold;
+	color:#FFF;
+	padding:13px;
+	
+}
+
+
+
+.userTask
+{
+	left: 35px;
+    line-height: 8px;
+    margin-bottom: 19px;
+    position: relative;
+    top: 55px;
+    width: 725px;
+	
+}
+
+
+p
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#424242;
+	
+}
+span
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#096b6b;
+}
+
+#urgent
+{
+	font-weight:bold;
+	background-color: #FF0000;
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    padding: 0px 5px;
+    position: relative;
+    top: -5px;
+	-moz-border-radius: 1.8px;
+	-webkit-border-radius: 1.8px;
+	border-radius: 1.8px; /* future proofing */
+	-khtml-border-radius: 2px; /* for old Konqueror browsers */
+}
+	
+
+.unTextline
+{
+	color: #DEDEDE;
+	border-color:#DEDEDE;
+	border:solid 1px;
+    margin-top: -10px;
+    width: 808px;
+}
+a.task:link 
+{
+	text-decoration:none;
+	color:#343434;
+}
+
+a.task:visited
+{
+	text-decoration:none;
+	color: #424242;
+}
+a.task:hover
+{
+	text-decoration:none;
+	color:#000;
+}
+
+.startBtn-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    right: 75%;
+    
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #f5f5f5; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:15px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 7px 23px ;
+	left:729px;
+	top:-36px  
+	
+}
+.startBtn-link:hover {
+    
+    border: solid 1px #8d8c8c;
+    text-decoration: none;
+}
+.startBtn-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+.compTask
+{
+	
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	
+	
+}
+
+a.one:link
+{
+	text-decoration:underline;
+	color:#477b96;
+}
+a.one:visited
+{
+	text-decoration:underline;
+	color:#477b96;
+}
+a.one:hover
+{
+	text-decoration:underline;
+	color:#1f475b;
+}
+#whieBgUser-name
+{
+	width: 146px;
+	background-color:#FFF;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+	height: 225px;
+}
+.imgSize
+{
+	margin-top:14px; margin-left:14px; width:40px;
+}
+
+.userLi
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#098030;
+	list-style-type:none;
+	line-height:30px;
+	margin-left:-20px;
+}
+
+a.usNam:link
+{
+	color:#098030;
+	text-decoration:underline;
+}
+a.usNam:visited
+{
+	color:#098030;
+	text-decoration:underline;
+}a.usNam:hover
+{
+	color:#03551e;
+	text-decoration:underline;
+}
+
+.sidePanel
+{
+	left: 928px;
+    position: absolute;
+    top: 26px;
+    width: 165px;
+}
+.text 
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#000;
+	margin-top:15px;
+	margin-bottom: 5px;
+}
+#myList
+{
+	margin-top: -7px;
+    text-align: left;
+    width: 146px;
+}
+
+#myListHead
+{
+	margin-top: -7px;
+    text-align: left;
+    width: 146px;
+}
+
+/*........................addTaskpage and reopenTaskpage......................*/
+#addTaskPg
+{
+	
+	background-color: #FFFFFF;
+   -moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 11%;
+    top: 139px;
+    width: 869px;
+}
+
+
+.hdText
+{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:20px;
+	color:#009d4d;
+	font-weight:bold;
+	position:relative;
+	top:8px;
+	left:54px;
+		
+}
+#innerTextDiv
+{
+	position:relative;
+	top:30px;
+}
+	
+
+#subjTextArea
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:15px;
+	
+}
+#descripTextArea
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:15px;
+}
+
+#attachment
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:21px;
+}
+
+
+
+.sub
+{
+	position:relative;
+}
+.desc
+{
+	position:relative;
+}
+
+#subject
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	
+}
+/*#subjTextArea .textareaBox
+{
+position: relative;
+}*/
+
+#decriptextareaBox
+{
+position: relative;
+}
+
+
+.textarea-a 
+{	border: 1px solid #FFFFFF;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    left: 0px;
+    outline: medium none;
+    overflow: hidden;
+    resize: none;
+    width: 655px;
+	top:-5px;
+	position:relative;
+	background:none;
+	text-indent:5px;
+	text-align:left;
+	float:right;
+}
+.textarea-b 
+{	border: 1px solid #FFFFFF;
+    color: #6d6c6c;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    left: 0px;
+    outline: medium none;
+    overflow: hidden;
+    resize: none;
+    width: 655px;
+	top:-5px;
+	position:relative;
+	background:none;
+	text-indent:5px;
+	text-align:left;
+	float:right;
+}
+
+#reOpenTaskPg
+{	
+	left: 512px;
+    position: relative;
+    top: 101px;
+    width: 879px;
+	background-color:#FFF;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+}
+
+
+.unAddTask
+{
+	background-color: #E5E5E5;
+    height: 1px;
+    left: 123px;
+    position: relative;
+    top: 0;
+    width: 645px;
+	
+}
+
+.attchBoxBord
+{
+	border: 1px solid #6d6c6c;
+    height: 125px;
+    position: relative;
+    width:772px;
+	left:54px;
+	margin-bottom:22px;
+	padding: 0 0 19px;
+}
+
+#attchBox 
+{
+	width:240px;
+	height:17px;
+	border:1px solid #8f8c8c;
+	padding:1px;
+	margin-left:13px;
+	
+}
+.attachBoxlabel
+{
+	width:200px;
+	border:none;
+	height:17px;
+	background-color:#000;
+	
+}
+.tabel1
+{
+	margin-left: 80px;
+    margin-top: 10px;
+}
+a.cancel:link 
+{
+	text-decoration:none;
+	color:#6d6c6c;
+}
+
+a.cancel:visited
+{
+	text-decoration:none;
+	color: #6d6c6c;
+}
+a.cancel:hover
+{
+	text-decoration:underline;
+	color:#000;
+}
+.tAAFile
+{
+	margin-left: 127px;
+    margin-top: -14px;
+}
+.attachTxt
+{
+	color: #6D6C6C;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+	margin-left:14px;
+}
+
+.devp
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:15px;
+	
+}
+
+.assignTo
+{
+	
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#6d6c6c;
+	left:54px;
+	margin-bottom:38px;
+	width:772px;
+}
+#assignList
+{
+	left: 22px;
+    position: relative;
+    top: -9px;
+}
+.imgSize1
+{
+	margin-top:14px; width:30px;
+}
+.sBtnList
+{
+	/*top:650px;*/
+	/*margin-top:35px;*/
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#6d6c6c;
+	left:54px;
+	margin-bottom:15px;
+	width:772px;
+}
+.submitTaskBtn-link {
+   	border: 1px solid #008C4A;
+   	width: 105px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers*/ 
+	background: #00a14b; /* Old browsers */
+	background: -moz-linear-gradient(top, #00a14b 0%, #009c4d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a14b), color-stop(100%,#009c4d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a14b', endColorstr='#009c4d',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-shadow: 1px 1px 1px #1e4c39;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 14px ;
+}
+.submitTaskBtn-link:hover {
+    
+    border: solid 1px #014625;
+	text-decoration: none;
+	/-moz-box-shadow:    0px 0px 3px 2px #CCC;
+  	-webkit-box-shadow: 0px 0px 3px 2px #ccc;
+ 	 box-shadow:         0px 0px 3px 2px #ccc;
+
+}
+.addTaskBtn-link:active {
+    border: solid 1px #008C4A;
+	text-decoration: none;
+}
+
+#priority
+{
+	margin-left: 48px;
+	position:relative;
+	top:-10px;
+	width: 146px;
+}
+#reOpenTaskPg
+{
+	
+	background-color: #FFFFFF;
+    -moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 11%;
+    top: 139px;
+    width: 869px;
+}
+
+
+
+/*........................mainLandingEditingTaskpage......................*/
+
+.descriptionText
+{
+	color: #424242;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    position: relative;
+    top: -1px;
+}
+blockquote
+{
+	 margin-top: 4px;
+    width: 769px;
+}
+
+.addComment-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #f5f5f5; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 7px ;
+	
+}
+.addComment-link:hover {
+    
+    border: solid 1px #8d8c8c;
+    text-decoration: none;
+}
+.addComment-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+.textarea3 
+{	border: 1px solid #FFFFFF;
+   	color: #424242;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+	font-weight:normal;
+    outline: medium none;
+    overflow: hidden;
+    resize: none;
+    width: 670px;
+	margin-top: 20px;
+	
+	}
+.line3
+{
+	left: -40px;
+    position: absolute;
+    top: 147px;
+}
+#rooloverBtn
+{
+	float: right;
+    position: relative;
+    text-align: right;
+    z-index: 9999;
+}
+
+.lineComment
+{
+	background-color: #e5e5e5;
+    height: 1px;
+    width: 663px;
+}
+#confirmReasign
+{	
+	height: 90px;
+    left: 379px;
+    position: absolute;
+    top: 37px;
+    width: 248px;
+	background-color:#FFF;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+	z-index:9999;	
+}
+
+.confReasign
+{
+	color: #424242;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 35px;
+    position: absolute;
+    top: 0px;
+	
+}
+.yesN0-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #f5f5f5; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 22px ;
+	left:52px;
+	top:26px;
+	
+}
+.yesN0-link:hover {
+    
+    border: solid 1px #8d8c8c;
+    text-decoration: none;
+}
+.yesN0-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+
+
+	 
+/*........................mainLandingEditingCompletedTaskpage......................*/
+
+a.comptask:link 
+{
+	text-decoration:none;
+	color:#477B96;
+	font-weight:lighter;
+}
+
+a.comptask:visited
+{
+	text-decoration:none;
+	color: #477B96;
+	font-weight:lighter;
+}
+a.comptask:hover
+{
+	text-decoration:none;
+	color:#2a5368;
+	font-weight:lighter;
+}
+.comTask
+{	
+	line-height: 8px;
+    margin-bottom: 29px;
+    position: relative;
+    top: 16px;
+    width: 725px;
+	font-weight:lighter;
+}
+.completedTask
+{
+	
+	margin-top:24px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:lighter;
+	
+	
+}
+#descripOnCompletTask
+{
+	color: #aa9c84;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+	font-weight:normal;
+	line-height:20px;
+	
+}
+.reopen-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #f5f5f5; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 7px ;
+	top:10px;
+	line-height:26px;
+	
+}
+.reopen-link:hover {
+    
+    border: solid 1px #8d8c8c;
+    text-decoration: none;
+}
+.reopen-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+
+a.moreComptask:link 
+{
+	text-decoration:none;
+	color:#667de2;
+	font-weight:lighter;
+}
+
+a.moreComptask:visited
+{
+	text-decoration:none;
+	color: #667de2;
+	font-weight:lighter;
+}
+a.moreComptask:hover
+{
+	text-decoration:none;
+	color:#365af5;
+	font-weight:lighter;
+	text-decoration:underline;
+}
+.finish-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    right: 75%;
+    
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #d3d1d1; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:15px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 7px 19px ;
+	left:729px;
+	top:-36px  
+	
+}
+.finish-link:hover {
+    
+    border: solid 1px #c6c6c6;
+    text-decoration: none;
+}
+.finish-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+
+#finishPopup
+{	
+	height: 228px;
+    left: 392px;
+    position: absolute;
+    top: 137px;
+    width: 420px;
+	background-color:#FFF;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+}
+.poptext
+{
+	color: #424242;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    margin-left: 36px;
+    margin-top: -5px;
+}
+.textarea4
+{
+	margin-left:35px;
+	width:347px;
+	font-weight: normal;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	color: #424242;
+	overflow:hidden;
+}
+.popupline
+{
+	background-color: #E5E5E5;
+    height: 1px;
+    margin-left: 95px;
+    position: relative;
+    top: -18px;
+    width: 45px;
+}
+.done-link {
+   	border: 1px solid #c6c6c6;
+   	position: relative;
+    -moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 3px; /* future proofing */
+	/*<!---khtml-border-radius: 3px; /* for old Konqueror browsers */
+	background-color: #f5f5f5; /* Old browsers */
+	color:#444444;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	text-shadow: 1px 1px 1px #e4e4e4;
+	text-align:center; 
+	text-decoration: none;
+	padding: 4px 15px ;
+	top:10px;
+	line-height:26px;
+	left:39px;
+}
+.done-link:hover {
+    
+    border: solid 1px #8d8c8c;
+    text-decoration: none;
+}
+.done-link:active {
+    border: solid 1px #c6c6c6;
+	text-decoration: none;
+} 
+#textbox
+{
+	border:none;
+	width:43px;
+}
+
+/*.........................user detail Pages.................................... */
+#userDetailpage
+{
+	
+	background-color: #FFFFFF;
+    -moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 11%;
+    top: 139px;
+    width: 869px;
+}
+
+
+
+#headUserDeatils	
+{
+	font-family: Verdana,Geneva,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    left: 32px;
+    line-height: 17px;
+    position: relative;
+    top: 18px;
+}
+.unUserHead
+{
+	background-color: #e5e5e5;
+    height: 2px;
+    top: 20px;
+    position: relative;
+    width: 881px;
+}
+
+#userDetailContainer
+{
+	left: -5px;
+    position: relative;
+    
+}
+
+#unCompleteTask
+{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+	margin-top:-24px;
+	margin-bottom:25px;
+		
+}
+a.two:link
+{
+	text-decoration:underline;
+	color:#333;
+}
+a.two:visited
+{
+	text-decoration:underline;
+	color:#333;
+}
+a.two:hover
+{
+	text-decoration:underline;
+	color:#000
+}
+
+/*..................................labelPages........................... */
+#mainlabelPage
+{	background-color: #FFFFFF;
+    -moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+    left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 11%;
+    top: 139px;
+    width: 869px;
+}
+
+
+
+
+
+#labelPage
+{	
+	height:1158px;
+    left: 39px;
+    position: relative;
+    top: 25px;
+    width: 880px;
+	background-color:#FFF;
+	-moz-border-radius: 1.5px;
+	-webkit-border-radius: 1.5px;
+	border-radius: 1.5px; /* future proofing */
+	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+}
+
+#labelHead	
+{
+	font-family: Verdana,Geneva,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    left: 32px;
+    line-height: 17px;
+    position: absolute;
+    top: 30px;
+}
+#labelContainer
+{
+	left: -5px;
+    position: relative;
+    top: 65px;
+}
+
+/*................................loginPage.....................*/
+#bodylogin
+{
+background-color:#f3efe6;
+
+
+}
+
+
+#loginBg
+{	background-color:#FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px; /* for old Konqueror browsers */
+	position:absolute;
+    top: 50%;
+    left: 50%;
+    width:24em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -12.5em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+}
+#lognHd
+{
+	color: #030303;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+   	position: relative;
+    text-align: center;
+    top: 15px;
+    width: 385px;
+}
+.loginLine
+{
+	background-color: #e5e5e5;
+    height: 2px;
+    top: 55px;
+    position: absolute;
+    width: 385px;
+}
+
+.logininput
+{
+	height: 26px;
+    margin-left: 4.4em;
+    width: 16em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px
+}
+.loginBtn-link {
+   	border: 1px solid #008C4A;
+   	width: 105px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers*/ 
+	background: #00a14b; /* Old browsers */
+	background: -moz-linear-gradient(top, #00a14b 0%, #009c4d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a14b), color-stop(100%,#009c4d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a14b', endColorstr='#009c4d',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-shadow: 1px 1px 1px #1e4c39;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 26px ;
+	position:relative;
+	margin-left:155px;
+	top:27px;
+}
+.loginBtn-link:hover {
+    
+    border: solid 1px #014625;
+	text-decoration: none;
+	/-moz-box-shadow:    0px 0px 3px 2px #CCC;
+  	-webkit-box-shadow: 0px 0px 3px 2px #ccc;
+ 	 box-shadow:         0px 0px 3px 2px #ccc;
+
+}
+.loginBtn-link:active {
+    border: solid 1px #008C4A;
+	text-decoration: none;
+}
+
+#forgetUsername
+{
+	font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 25px;
+    margin-left: 96px;
+    margin-top: 47px;
+		
+}
+a.forgot:link
+{
+	text-decoration:underline;
+	color:#343434;
+}
+a.forgot:visited
+{
+	text-decoration:underline;
+	color:#343434;
+}
+a.forgot:hover
+{
+	text-decoration:underline;
+	color:#000
+}
+::-webkit-input-placeholder {
+   color: #8b8b8b;
+}
+
+:-moz-placeholder {  
+   color: #8b8b8b;  
+}
+placeholder {
+   color: #8b8b8b;
+}
+

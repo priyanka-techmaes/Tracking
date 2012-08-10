@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Main landing & Editing Page</title>
+<link rel="stylesheet" type="text/css" href="trakingTool.css"> 
+</head>
+
+<body id="mainPgBg">
+
+ 
+<div id="launchBar"> </div> 
+ <!--<canvas id="myCanvas"> </canvas>
+ 
+<script type="text/javascript">
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#ffffff";
+ctx.beginPath();
+ctx.arc(100,80,60,60,Math.PI*2,true);
+ctx.closePath();
+ctx.fill();
+</script>-->
+
+<div id="parentDiv">
+
+<div class="logo"> i Magnate </div>
+<a href="#" class="addTaskBtn-link"> Add Task + </a>
+<div class="sidePanel">
+<div id="whieBgUser-name" class="shadow"> 
+<img src="Images/1343658334_user.png" alt="userImages" class="imgSize">
+<ul style="margin-top:6px">
+	<li class="userLi"><a href="#" class="usNam"> Vikas Jagtap </a></li>
+    <li class="userLi"><a href="#" class="usNam"> Vikas Abhang </a></li> 
+    <li class="userLi"><a href="#" class="usNam"> Amol Shirke </a></li>
+    <li class="userLi"><a href="#" class="usNam">Priyanka Kotkar</a></li> 
+    <li class="userLi"><a href="#" class="usNam"> Pradip Kale </a></li> 
+</ul>
+</div>
+
+<p class="text"> Show Task By </p>
+         
+             <select id = "myList">
+               <option value = "1">Priority</option>
+               <option value = "2">Urgent</option>
+               <option value = "3">Days </option>
+               <option value = "4">Date</option>
+             </select>
+
+</div>
+
+
+
+ 
+
+ 
+<div id="whieBgMain" class="shadow">
+<div id="hdText"> Task List </div>
+
+<div class="userTask"> 
+<a class="uName userNameBg" href="#"><span class="users"> Vikas Jagtap </span> </a>
+<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p> <hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+</div> <br><br>
+
+<div class="userTask"> 
+<a class="uName userNameBg" href="#"><span class="users"> Vikas Abhang </span> </a>
+<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p> <hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+</div><br><br>
+
+<div class="userTask"> 
+<a class="uName userNameBg" href="#"><span class="users"> Amol Shirke </span> </a>
+<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p>
+
+
+<blockquote>
+<div id="rooloverBtn">
+<p> <a class="cancel" href="#">Edit</a> </p>
+<p> <a class="cancel" href="#">Cancel</a> </p>
+ 
+<img src="Images/1343658334_user.png" alt="users" class="imgSize1" style="margin-top:-12px;" >
+<select id="assignList" style="left:0px; top:-2px">
+               <option value = "1">Reassign to </option>
+               <option value = "2">Vikas Jagtap</option>
+               <option value = "3">Vikas Abhang </option>
+              <option value = "4">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
+             </select>
+ 
+</div>
+<div class="descriptionText"> Please Check This mail & Please give reference from www.w3schools.com <br/>
+and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
+<a href="#" class="addComment-link"> Add Comment </a>
+ 
+
+<textarea class="textarea3" rows="1">Whenever user click add comment btn wiil be dissappear and display under comment  </textarea> <br/> <b> 28 july 12.20pm - Pradip Kale </b>
+
+  <div class="lineComment"></div><br/>
+  <a href="#" class="addComment-link"> Add Comment </a> <br/>
+</div>    
+</blockquote> 
+
+<div id="confirmReasign" class="shadow"> 
+<p class="confReasign"> Reassign task to Pradip Kale? </p> <br/> <br/><br/> 
+<a href="#" class="yesN0-link"> Yes  </a> &#160;&#160;
+<a href="#" class="yesN0-link"> No </a> 
+
+</div>
+
+
+
+
+
+<hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read andLearn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+</div> <br><br>
+
+<div class="userTask"> 
+<a class="uName userNameBg" href="#"><span class="users"> Priyanka Kotkar </span> </a>
+<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p> <hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="finish-link" > Finish </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div id="descripOnCompletTask">
+<blockquote>
+Please Check This mail & Please give reference from www.w3schools.com <br/>
+and Check compatibility also   from : Priyanka Kotkar <br/> 
+<a href="#" class="reopen-link"> Reopen Task </a> 
+
+</blockquote>
+</div>
+<div id="finishPopup" class="shadow"> 
+<div style="position:relative; top:25px;">
+<p class="poptext"> Duration: <input type="text" id="textbox"> Hrs.</p>  
+
+<!--<textarea class="textarea3" style="width:280px;" rows="1"></textarea> </p>-->
+<div class="popupline"></div>
+<p class="poptext"> Comment:</p>
+<textarea rows="4" class="textarea4"></textarea> <br/>
+<a href="#" class="done-link"> Done </a> 
+</div> 
+</div>
+
+
+
+
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="moreComptask" href="#"> 8 more completed Task </a> </p>
+</div>
+
+
+</div>
+</div> <br><br>
+
+<div class="userTask"> 
+<a class="uName userNameBg" href="#"><span class="users"> Pradip Kale </span> </a>
+<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p> <hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+</div>
+<br/>
+<br/>
+<br/>
+</div>
+<br/>
+<br/>
+<br/> 
+</div>
+
+
+
+
+</body>
+</html>
