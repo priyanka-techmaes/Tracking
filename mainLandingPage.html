@@ -3,7 +3,47 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Main landing Page</title>
-<link rel="stylesheet" type="text/css" href="trakingTool.css"> 
+<link rel="stylesheet" type="text/css" href="trakingTool.css">
+<script type="text/javascript" src="js/jquery-1.2.6.js"></script> 
+
+<script type="text/javascript"> 
+function hideShowPopUp(divId) {
+
+	if (document.getElementById(divId).style.display == 'block') {
+		document.getElementById(divId).style.display = 'none';
+		document.getElementById('fade').style.display = 'none';
+		
+		
+	} else {
+		document.getElementById(divId).style.display = 'block';
+		document.getElementById('fade').style.display = 'block';
+	}
+
+}
+<!------------------ without Fade Id functiom ---------------------->
+function showPopUp(divId) {
+
+	if (document.getElementById(divId).style.display == 'block') {
+		document.getElementById(divId).style.display = 'none';
+		
+	} else {
+		document.getElementById(divId).style.display = 'block';
+		
+	}
+
+}
+<!------------------ End without Fade Id functiom ---------------------->
+
+
+
+
+
+
+
+
+</script>
+
+
 </head>
 
 <body id="mainPgBg">
@@ -11,7 +51,7 @@
  
 <div id="launchBar"> 
 </div> 
-<p id="singOut"><a href="#" class="signout"> Sign out </a></p> 
+<p id="singOut"><a href="file:///C:/xampp/htdocs/trackingTool/loginPage.html" class="signout"> Sign out </a></p> 
 
  <!--<canvas id="myCanvas"> </canvas>
  
@@ -24,16 +64,17 @@ ctx.arc(100,80,60,60,Math.PI*2,true);
 ctx.closePath();
 ctx.fill();
 </script>-->
-
+ 
 <div id="parentDiv">
 
 <div class="logo"> i Magnate </div>
-<a href="#" class="addTaskBtn-link"> Add Task + </a>
+<!--<a href="#" class="addTaskBtn-link" onClick="hideShowPopUp(#addTaskPg)"> Add Task + </a>-->
+<button class="addTaskBtn-link" onclick="hideShowPopUp('addTaskPg')"> Add Task +</button> 
 <div class="sidePanel">
 <div id="whieBgUser-name" class="shadow"> 
 <img src="Images/1343658334_user.png" alt="userImages" class="imgSize">
 <ul style="margin-top:6px">
-	<li class="userLi"><a href="#" class="usNam"> Vikas Jagtap </a></li>
+	<li class="userLi"><a href="#" class="usNam" onclick="hideShowPopUp('userDetailpage')"> Vikas Jagtap </a></li>
     <li class="userLi"><a href="#" class="usNam"> Vikas Abhang </a></li> 
     <li class="userLi"><a href="#" class="usNam"> Amol Shirke </a></li>
     <li class="userLi"><a href="#" class="usNam">Priyanka Kotkar</a></li> 
@@ -45,7 +86,7 @@ ctx.fill();
          
              <select id = "myList">
                <option value = "1">Priority</option>
-               <option value = "2">Urgent</option>
+               <option value = "2" onclick="hideShowPopUp('mainlabelPage')">Urgent</option>
                <option value = "3">Days </option>
                <option value = "4">Date</option>
              </select>
@@ -53,29 +94,93 @@ ctx.fill();
 </div>
 
 
-
-
-
-
- 
-
 <div style="position:relative">
 <div id="whieBgMain" class="shadow">
-<div id="hdText"> Task List </div>
 
+<div id="hdText"><a class="listOfTask"  href='javascript:void(0)'> Task List </a></div> 
 <div class="userTask"> 
-<a class="uName userNameBg" href="#"><span class="users"> Vikas Jagtap </span> </a>
-<p><a class="task" href="#"> Read and Learn HTML 5 &#160; 
+<a class="uName userNameBg" href="#" onclick="hideShowPopUp('userDetailpage')">
+<span class="users"> Vikas Jagtap </span>  </a>
+
+<p><a class="task" href="#" onclick="showPopUp('blockkqote')"> Read and Learn HTML 5 &#160; 
 <span> 20 July </span> </a>&#160;&#160; 
 <span><img src="Images/New-Development.png" alt="New Development" title="New Development"> </span>&#160;&#160;
 <label title="Urgent Task"> <img src="Images/icon_urgent.png" alt="urgent"> </label>   
-</p> <hr class="unTextline"> 
+</p> 
+<!-------Start Task Editing Div------------->
+
+<div id="blockkqote">
+<blockquote>
+
+<div class="descriptionText"> Please Check This mail & Please give reference from www.w3schools.com <br/>
+and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
+<a href="#" class="addComment-link" onClick="showPopUp('addCommit')"> Add Comment </a>
+
+<textarea class="textarea3" rows="1">Whenever user click add comment btn wiil be dissappear and display under comment  </textarea> <br/> <b> 28 july 12.20pm - Pradip Kale </b>
+
+  <div class="lineComment"></div><br/>
+</div>
+<div id="rooloverBtn" style="display:none">
+<p> <a class="cancel" href="#">Edit</a> </p>
+<p> <a class="cancel" href="#">Cancel</a> </p>
+ 
+<img src="Images/1343658334_user.png" alt="users" class="imgSize1" style="margin-top:-12px;" >
+<select id="assignList" style="left:0px; top:-2px">
+               <option value = "1">Reassign to </option>
+               <option value = "2">Vikas Jagtap</option>
+               <option value = "3">Vikas Abhang </option>
+              <option value = "4">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
+             </select>
+ 
+</div>
+<div id="addCommit" style="display:none; line-height:20px;"><br/>
+<a href="#" class="addComment-link"> Add Comment </a> <br/>
+<textarea class="textarea3" rows="1">Whenever user click add comment btn wiil be dissappear and display under comment  </textarea> <br/> <b> 28 july 12.20pm - Pradip Kale </b>
+  </div>    
+</blockquote> 
+</div>
+
+
+<!-------EndTask EditingTask Div------------->
+
+<hr class="unTextline"> 
 <a href="#" class="startBtn-link"> Start </a>
 <p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
 <a href="#" class="startBtn-link"> Start </a>
 <p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
 <a href="#" class="startBtn-link"> Start </a>
-<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+<div class="compTask"> <a class="one" href="#" onclick="showPopUp('completed3Task')"> Completed Task </a> </div>
+<!--------------------------------StartCompletedTaskDiv--------------->
+<div id="completed3Task" style="display:none" >
+<div class="completedTask">
+<p><a class="comptask" href="#" onClick="showPopUp('descripOnCompletTask')"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+
+<div id="descripOnCompletTask" style="display:none">
+<blockquote>
+Please Check This mail & Please give reference from www.w3schools.com <br/>
+and Check compatibility also   from : Priyanka Kotkar <br/> 
+<a href="#" class="reopen-link" onclick="hideShowPopUp('reOpenTaskPg')"> Reopen Task </a> 
+
+</blockquote>
+</div>
+
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="moreComptask" href="#"> 8 more completed Task </a> </p>
+
+
+</div>
+</div>
+<!--------------------------------EndCompletedTask--------------->
+
 </div> <br><br>
 
 <div class="userTask"> 
@@ -150,8 +255,345 @@ ctx.fill();
 
 </div> 
 
+<!------------- add Task popup ..............-->
+
+<div id="addTaskPg" class="shadow" style="display:none"> 
+<div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('addTaskPg')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>	
+ 
+ 			<p class="hdText"> Task </p>
+ 				<div id="innerTextDiv">
+                <form name="adfTask" action="#"> 
+                <div id="subjTextArea">
+ 					 Subject: 
+ 						<label> <textarea class="textarea-a" rows="1"></textarea> </label>  
+                       <div class="unAddTask"></div><br/>
+               	</div> 
+                <div id="descripTextArea">
+ 					 Description:
+ 						<label> <textarea class="textarea-b" rows="1" ></textarea> </label>  
+                       <div class="unAddTask"></div><br/>
+               	</div> 
+               
+			 
+                
+                <div id="attachment"> Attachment: </div>
+  
+  <div class="attchBoxBord"> 
+  <table class="tabel1">
+ 	<tr style="height:40px;">
+ 		<td>
+        <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+        </td>
+        <td>
+        <p style="margin-left:14px;"> <a class="cancel" href="#"> To attach file from your computer </a> </p>
+        </td>
+    </tr> 
+    <tr> 
+        <td>
+ 		 <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+         </td> 
+         <td>
+ 		<div id="attchBox"> 
+ 		<div class="attachBoxlabel"> </div> 
+ 		</div>
+        </td>
+        <td> <p> <a class="cancel" href="#">Cancel File </a> </p> </td>
+    </tr>
+    </table>
+    
+   <div class="tAAFile"> 	
+   <p> <a class="cancel" href="#">To attach another file </a> </p> 
+    </div>
+ </div>
+ 
+ 	<div class="devp"> 
+ 	New Development:  <input type="radio" name="Development"  value="New development"> 
+ 	&#160;&#160;&#160;&#160;
+ 	Bug : <input type="radio" name="Development"  value="Bug">    
+ 	</div>
+    <div class="assignTo"> 
+	 <img src="Images/1343658334_user.png" alt="users" class="imgSize1" >
+    <select id="assignList">
+               <option value = "1">Assign to </option>
+               <option value = "2" >Vikas Jagtap</option>
+               <option value = "3">Vikas Abhang </option>
+               <option value = "5">Priyanka Kotkar</option>
+               <option value = "6">Amol Shirke</option>
+               <option value = "7">Pradip Kale</option>
+             </select>
+             
+	<select id = "priority">
+               <option value = "1">Priority</option>
+               <option value = "2">Urgent</option>
+               <option value = "3">Days </option>
+               <option value = "4">Date</option>
+             </select>             
+    </div>
+    
+    <div class="sBtnList">
+ 	<a href="#" class="submitTaskBtn-link">Submit</a> or 
+ 	<a href="#" class="submitTaskBtn-link">Submit & Add more</a>   
+	<a class="cancel" href='javascript:void(0)' onclick="hideShowPopUp('addTaskPg')">Cancel </a>  
+ 	</div>
+ 
+</form>
+</div>
+<br/>
+<br/>
+<br/>
 
 
+
+  
+</div>
+<div id="fade"></div>
+
+<!------------- User Detail Page  ..............-->
+<div id="userDetailpage" class="shadow">    
+<div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('userDetailpage')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>			
+
+<div id="headUserDeatils" style="color:#000"> Vikas Jagtap 
+ <p style="font-weight:normal"> vikas.jagtap@imgnate.com </p>
+ </div> 
+<div class="unUserHead"></div><br/>
+ 
+ <div id="userDetailContainer">  
+ 	<div class="userTask">  
+ 	<div id="unCompleteTask"> <a class="two" href="#"> Uncompleted Task </a> </div> 
+		<p><a class="task" href="#" onclick="showPopUp('blockkqote')"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p>
+		<!-------Task Editing Div------------->
+<div id="blockkqote">
+<blockquote>
+
+<div class="descriptionText"> Please Check This mail & Please give reference from www.w3schools.com <br/>
+and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
+<a href="#" class="addComment-link" onClick="showPopUp('addCommit')"> Add Comment </a>
+
+<textarea class="textarea3" rows="1">Whenever user click add comment btn wiil be dissappear and display under comment  </textarea> <br/> <b> 28 july 12.20pm - Pradip Kale </b>
+
+  <div class="lineComment"></div><br/>
+</div>
+<div id="rooloverBtn" style="display:none">
+<p> <a class="cancel" href="#">Edit</a> </p>
+<p> <a class="cancel" href="#">Cancel</a> </p>
+ 
+<img src="Images/1343658334_user.png" alt="users" class="imgSize1" style="margin-top:-12px;" >
+<select id="assignList" style="left:0px; top:-2px">
+               <option value = "1">Reassign to </option>
+               <option value = "2">Vikas Jagtap</option>
+               <option value = "3">Vikas Abhang </option>
+              <option value = "4">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
+             </select>
+ 
+</div>
+<div id="addCommit" style="display:none; line-height:20px;"><br/>
+<a href="#" class="addComment-link"> Add Comment </a> <br/>
+<textarea class="textarea3" rows="1">Whenever user click add comment btn wiil be dissappear and display under comment  </textarea> <br/> <b> 28 july 12.20pm - Pradip Kale </b>
+  </div>    
+</blockquote> 
+</div>
+
+
+<!-------EndTask Editing Div------------->
+<hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read andLearn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="moreComptask" href="#"> 8 more completed Task </a> </p>
+<br/>
+<br/>
+<br/>
+
+</div>
+<br/>
+<br/>
+<br/>
+    
+    
+    <div>
+	
+    </div>
+</div>
+</div> 				
+
+  </div>
+<!-------------------------------- Edting Task -------------------------->
+
+
+<div id="confirmReasign" class="shadow"> 
+<p class="confReasign"> Reassign task to Pradip Kale? </p> <br/> <br/><br/> 
+<a href="#" class="yesN0-link"> Yes </a> &#160;&#160;
+<a href="#" class="yesN0-link"> No </a> 
+</div>
+</div>
+<!--..........................End.....................-->
+
+<!---------------- Urgent LabelDiv----------------------------------------------------->
+<div id="mainlabelPage" class="shadow" style="display:none">    
+ <div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('mainlabelPage')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>				
+
+<div id="headUserDeatils" style="color:#000"> Urgent &#160;&#160; 
+<select id = "myList">
+               <option value = "1">Priority</option>
+               <option value = "2">Urgent</option>
+               <option value = "3">Days </option>
+               <option value = "4">Date</option>
+             </select><br/><br/> 
+
+ 
+ </div> 
+<div class="unUserHead"></div><br/>
+ 
+ <div id="userDetailContainer">  
+ 	<div class="userTask">  
+ 	<div id="unCompleteTask"> <a class="two" href="#"> Uncompleted Task </a> </div> 
+		<p><a class="task" href="#"> Read and Learn HTML 5 &#160;&#160; <span> 20 July </span> </a> </p>
+		
+<hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read andLearn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline">
+<a href="#" class="startBtn-link"> Start </a>
+<p><a class="task" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July </span></a> </p><hr class="unTextline"> 
+<a href="#" class="startBtn-link"> Start </a>
+<div class="compTask"> <a class="one" href="#"> Completed Task </a> </div>
+
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="comptask" href="#"> Read and Learn  more practics for jqery &#160;&#160; <span> 20 July 4Hr. </span></a> </p>
+</div>
+<div class="completedTask">
+<p><a class="moreComptask" href="#"> 8 more completed Task </a> </p>
+</div>
+<br/>
+<br/>
+<br/>
+    
+ <div>
+ </div>
+<br/>
+<br/>
+</div>
+</div>
+</div>
+
+
+<!---------------- --------------------EndUrgent LabelDiv------------------------------>
+<!--------------------------------------ReOpenTask---------------------------------------->
+
+<div id="reOpenTaskPg" class="shadow" style="display:none">  
+ 			<div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('reOpenTaskPg')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>	
+            <p class="hdText" style="color:#000"> Reopen Task </p>
+            
+ 				<div id="innerTextDiv">
+                <form name="adfTask" action="#"> 
+                <div id="subjTextArea">
+ 					 Subject: 
+ 						<label> <textarea class="textarea-a" rows="1" placeholder="Default text from Completed Task" ></textarea> </label>  
+                       <div class="unAddTask"></div><br/>
+               	</div> 
+                <div id="descripTextArea">
+ 					 Description:
+ 						<label> <textarea class="textarea-b" rows="1" placeholder="Default text from Completed Task"></textarea> </label>  
+                       <div class="unAddTask"></div><br/>
+               	</div> 
+               
+			 
+                
+                <div id="attachment"> Attachment: </div>
+  
+  <div class="attchBoxBord"> 
+  <table class="tabel1">
+ 	<tr style="height:40px;">
+ 		<td>
+        <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+        </td>
+        <td>
+        <p style="margin-left:14px;"> <a class="cancel" href="#"> To attach file from your computer </a> </p>
+        </td>
+    </tr> 
+    <tr> 
+        <td>
+ 		 <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+         </td> 
+         <td>
+ 		<div id="attchBox"> 
+ 		<div class="attachBoxlabel"> </div> 
+ 		</div>
+        </td>
+        <td> <p> <a class="cancel" href="#">Cancel File </a> </p> </td>
+    </tr>
+    </table>
+    
+   <div class="tAAFile"> 	
+   <p> <a class="cancel" href="#">To attach another file </a> </p> 
+    </div>
+ </div>
+ 
+ 	<div class="devp"> 
+ 	New Development:  <input type="checkbox" name="New Development"  value="development"> 
+ 	&#160;&#160;&#160;&#160;
+ 	Bug : <input type="checkbox" name="Bug"  value="development">    
+ 	</div>
+    <div class="assignTo"> 
+	 <img src="Images/1343658334_user.png" alt="users" class="imgSize1" >
+    <select id="assignList">
+               <option value = "1">Assign to </option>
+               <option value = "2">Vikas Jagtap</option>
+               <option value = "3">Vikas Abhang </option>
+               <option value = "4">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
+             </select>
+             
+	<select id = "priority">
+               <option value = "1">Priority</option>
+               <option value = "2">Urgent</option>
+               <option value = "3">Days </option>
+               <option value = "4">Date</option>
+             </select>             
+    </div>
+    
+    <div class="sBtnList">
+ 	<a href="#" class="submitTaskBtn-link">Submit</a> or 
+ 		<a class="cancel" href="javascript:void(0)" onclick="hideShowPopUp('reOpenTaskPg')">Cancel </a>  
+ 	</div>
+ 
+</form>
+<br/>
+<br/>
+</div>
+</div>
+  
+
+
+
+
+
+
+
+<!----------------------EndReopen---------------------------------------------------------------->
 
 </body>
 </html>
+>

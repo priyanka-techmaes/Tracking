@@ -168,7 +168,7 @@ a.signout:active
 	text-decoration: none;
 	padding: 10px 2px ;
 	top:96px;
-	z-index:9999;  
+	
 	
 }
 .addTaskBtn-link:hover {
@@ -201,7 +201,32 @@ a.signout:active
     position: relative;
     top: 11px;
     width: 200px;
+	z-index:9999;
 }
+
+a.listOfTask:link {
+    color: #030303;
+	text-decoration:none;
+}
+a.listOfTask:visited
+{	text-decoration:none;
+	color: #030303;
+}
+
+a.listOfTask:hover 
+{
+	text-decoration:none;
+	color:#030303;
+}
+
+a.listOfTask:active
+{
+	text-decoration:none;
+	color: #030303;
+}
+
+
+
 
 .userNameBg
 {
@@ -464,6 +489,8 @@ a.usNam:visited
     right: 11%;
     top: 139px;
     width: 869px;
+	z-index:9999
+	
 }
 
 
@@ -594,6 +621,7 @@ position: relative;
 	-webkit-border-radius: 1.5px;
 	border-radius: 1.5px; /* future proofing */
 	-khtml-border-radius: 1.5px; /* for old Konqueror browsers */
+	z-index:9999;
 }
 
 
@@ -835,6 +863,7 @@ blockquote
     resize: none;
     width: 670px;
 	margin-top: 20px;
+	line-height:20px;
 	
 	}
 .line3
@@ -845,8 +874,8 @@ blockquote
 }
 #rooloverBtn
 {
-	float: right;
-    position: relative;
+	margin-bottom:63px; 
+	margin-top:-90px;
     text-align: right;
     z-index: 9999;
 }
@@ -856,9 +885,11 @@ blockquote
 	background-color: #e5e5e5;
     height: 1px;
     width: 663px;
+	margin-bottom:-19px;
 }
 #confirmReasign
 {	
+	display:none;
 	height: 90px;
     left: 379px;
     position: absolute;
@@ -1125,7 +1156,7 @@ a.moreComptask:hover
 /*.........................user detail Pages.................................... */
 #userDetailpage
 {
-	
+	display:none;
 	background-color: #FFFFFF;
     -moz-border-radius: 1.5px;
 	-webkit-border-radius: 1.5px;
@@ -1138,8 +1169,16 @@ a.moreComptask:hover
     right: 11%;
     top: 139px;
     width: 869px;
+	z-index:9999;
 }
 
+#closeBtn
+{
+	position:relative;
+	float:right;
+	right:11px;
+	top:10px;
+}
 
 
 #headUserDeatils	
@@ -1151,6 +1190,7 @@ a.moreComptask:hover
     line-height: 17px;
     position: relative;
     top: 18px;
+	width:731px;
 }
 .unUserHead
 {
@@ -1158,7 +1198,7 @@ a.moreComptask:hover
     height: 2px;
     top: 20px;
     position: relative;
-    width: 881px;
+    width: 871px;
 }
 
 #userDetailContainer
@@ -1207,6 +1247,7 @@ a.two:hover
     right: 11%;
     top: 139px;
     width: 869px;
+	z-index:9999;
 }
 
 
@@ -1404,6 +1445,19 @@ label.error
    
 }
 
+#fade
+{	background-color: #FFFFFF;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9998;
+}
 
-
-
+#blockkqote
+{
+	display:none;
+}
