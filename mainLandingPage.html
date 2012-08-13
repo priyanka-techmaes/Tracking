@@ -4,7 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Main landing Page</title>
 <link rel="stylesheet" type="text/css" href="trakingTool.css">
-<script type="text/javascript" src="js/jquery-1.2.6.js"></script> 
+<script type="text/javascript" src="js/jquery-1.2.6.js"></script>
+<script type="text/javascript" src="js/jqueryFormValidation.js"></script> 
+<script type="text/javascript" src="js/ValidationRules.js"></script>
+<script type="text/javascript" src="js/jquery.autosize.js"></script>
+<script type="text/javascript" src="js/jquery.autosize-min.js"></script>
 
 <script type="text/javascript"> 
 function hideShowPopUp(divId) {
@@ -84,12 +88,12 @@ ctx.fill();
 
 <p class="text"> Show Task By </p>
          
-             <select id = "myList">
-               <option value = "1">Priority</option>
-               <option value = "2" onclick="hideShowPopUp('mainlabelPage')">Urgent</option>
+             <select id = "myList" onchange="hideShowPopUp('mainlabelPage');"> 
+              <option value = "1" >Priority</option>
+            <option value = "2" >Urgent</option>
                <option value = "3">Days </option>
                <option value = "4">Date</option>
-             </select>
+             </select> 
 
 </div>
 
@@ -262,16 +266,17 @@ and Check compatibility also   from : Priyanka Kotkar <br/>
  
  			<p class="hdText"> Task </p>
  				<div id="innerTextDiv">
-                <form name="adfTask" action="#"> 
+                <form name="adTask" action="#" id="addTaskMainpage" method="post"> 
                 <div id="subjTextArea">
  					 Subject: 
- 						<label> <textarea class="textarea-a" rows="1"></textarea> </label>  
-                       <div class="unAddTask"></div><br/>
-               	</div> 
+ 						 <textarea id="textarea_a" name="subject" class="required" rows="1"></textarea> 
+                         <div class="unAddTask"></div>  
+               	</div>
+                 
                 <div id="descripTextArea">
  					 Description:
- 						<label> <textarea class="textarea-b" rows="1" ></textarea> </label>  
-                       <div class="unAddTask"></div><br/>
+ 						 <textarea id="textarea_b" name="description" rows="1" class="required" ></textarea>  
+                       <div class="unAddTask2"></div><br/>
                	</div> 
                
 			 
@@ -311,15 +316,15 @@ and Check compatibility also   from : Priyanka Kotkar <br/>
  	&#160;&#160;&#160;&#160;
  	Bug : <input type="radio" name="Development"  value="Bug">    
  	</div>
-    <div class="assignTo"> 
+    <div id="assignTo"> 
 	 <img src="Images/1343658334_user.png" alt="users" class="imgSize1" >
-    <select id="assignList">
-               <option value = "1">Assign to </option>
-               <option value = "2" >Vikas Jagtap</option>
-               <option value = "3">Vikas Abhang </option>
-               <option value = "5">Priyanka Kotkar</option>
-               <option value = "6">Amol Shirke</option>
-               <option value = "7">Pradip Kale</option>
+    <select id="assignList" name="userListName" class="required">
+               <option value ="">Assign to</option>
+              	<option value = "1" >Vikas Jagtap</option>
+               <option value = "2">Vikas Abhang </option>
+               <option value = "3">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
              </select>
              
 	<select id = "priority">
@@ -331,8 +336,10 @@ and Check compatibility also   from : Priyanka Kotkar <br/>
     </div>
     
     <div class="sBtnList">
- 	<a href="#" class="submitTaskBtn-link">Submit</a> or 
- 	<a href="#" class="submitTaskBtn-link">Submit & Add more</a>   
+ 	<input class="submitTaskBtn-link" type="submit" value="Submit"/>
+   <!-- <a href="#" class="submitTaskBtn-link">Submit</a>--> or 
+   <input class="submitTaskAddMoreBtn-link" type="submit" value="Submit & Add More"/>
+ 	<!--<a href="#" class="submitTaskBtn-link">Submit & Add more</a>   -->
 	<a class="cancel" href='javascript:void(0)' onclick="hideShowPopUp('addTaskPg')">Cancel </a>  
  	</div>
  
@@ -445,7 +452,7 @@ and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
 <!--..........................End.....................-->
 
 <!---------------- Urgent LabelDiv----------------------------------------------------->
-<div id="mainlabelPage" class="shadow" style="display:none">    
+<div id="mainlabelPage" class="shadow" >    
  <div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('mainlabelPage')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>				
 
 <div id="headUserDeatils" style="color:#000"> Urgent &#160;&#160; 
@@ -596,4 +603,4 @@ and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
 
 </body>
 </html>
->
+>>>>>>

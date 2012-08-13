@@ -143,7 +143,7 @@ a.signout:active
 
 
 .addTaskBtn-link {
-   	border: 1px solid #008C4A;
+  	border: 1px solid #008C4A;
    	margin-left: -145px;
     position: fixed;
    width: 105px;
@@ -155,9 +155,9 @@ a.signout:active
 	background: -moz-linear-gradient(top, #00a14b 0%, #009c4d 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a14b), color-stop(100%,#009c4d)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
-	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%); /* W3C */
+	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+*/
+		background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%);  W3C 
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a14b', endColorstr='#009c4d',GradientType=0 ); /* IE6-9 */
 	color:#FFF;
 	font-family:Arial, Helvetica, sans-serif;
@@ -168,6 +168,7 @@ a.signout:active
 	text-decoration: none;
 	padding: 10px 2px ;
 	top:96px;
+	cursor:pointer;
 	
 	
 }
@@ -178,6 +179,7 @@ a.signout:active
 	/-moz-box-shadow:    0px 0px 3px 2px #CCC;
   	-webkit-box-shadow: 0px 0px 3px 2px #ccc;
  	 box-shadow:         0px 0px 3px 2px #ccc;
+	 
 	 
      
 	
@@ -197,7 +199,7 @@ a.signout:active
     font-family: Verdana,Geneva,sans-serif;
     font-size: 19px;
     font-weight: bold;
-    left: 36px;
+    left: 48px;
     position: relative;
     top: 11px;
     width: 200px;
@@ -509,6 +511,7 @@ a.usNam:visited
 {
 	position:relative;
 	top:30px;
+	left:-5px;
 }
 	
 
@@ -531,7 +534,7 @@ a.usNam:visited
 	font-size:15px;
 	width:772px;
 	color:#6d6c6c;
-	margin-bottom:15px;
+	margin-bottom:-13px;
 }
 
 #attachment
@@ -573,41 +576,47 @@ position: relative;
 }
 
 
-.textarea-a 
+#textarea_a 
 {	border: 1px solid #FFFFFF;
     color: #333333;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 17px;
     font-weight: bold;
-    left: 0px;
+    left: -1px;
     outline: medium none;
     overflow: hidden;
     resize: none;
-    width: 655px;
-	top:-5px;
+    width: 649px;
+	top:-10px;
 	position:relative;
 	background:none;
-	text-indent:5px;
 	text-align:left;
 	float:right;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:57px;
+	padding-right:0px;
 }
-.textarea-b 
+#textarea_b 
 {	border: 1px solid #FFFFFF;
     color: #6d6c6c;
     font-family: Arial,Helvetica,sans-serif;
     font-size: 15px;
     font-weight: normal;
-    left: 0px;
+    left: -1px;
     outline: medium none;
     overflow: hidden;
     resize: none;
-    width: 655px;
-	top:-5px;
+    width: 649px;
+	top:-27px;
 	position:relative;
 	background:none;
-	text-indent:5px;
 	text-align:left;
 	float:right;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:57px;
+	padding-right:0px;
 }
 
 #reOpenTaskPg
@@ -629,10 +638,24 @@ position: relative;
 {
 	background-color: #E5E5E5;
     height: 1px;
-    left: 123px;
+    left: 121px;
     position: relative;
-    top: 0;
-    width: 645px;
+    top: -14px;;
+    width: 644px;
+	clear:both;
+	margin-top:14px;
+	
+}
+.unAddTask2
+{
+	background-color: #E5E5E5;
+    height: 1px;
+    left: 121px;
+    position: relative;
+    top: -30px;;
+    width: 644px;
+	clear:both;
+	
 	
 }
 
@@ -710,7 +733,7 @@ a.cancel:hover
 	
 }
 
-.assignTo
+#assignTo
 {
 	
 	position:relative;
@@ -766,6 +789,7 @@ a.cancel:hover
 	text-align:center; 
 	text-decoration: none;
 	padding: 6px 14px ;
+	cursor:pointer;
 }
 .submitTaskBtn-link:hover {
     
@@ -777,6 +801,45 @@ a.cancel:hover
 
 }
 .addTaskBtn-link:active {
+    border: solid 1px #008C4A;
+	text-decoration: none;
+}
+
+.submitTaskAddMoreBtn-link {
+   	border: 1px solid #008C4A;
+   	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; 
+	-khtml-border-radius: 5px; /* for old Konqueror browsers*/ 
+	background: #00a14b; /* Old browsers */
+	background: -moz-linear-gradient(top, #00a14b 0%, #009c4d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00a14b), color-stop(100%,#009c4d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #00a14b 0%,#009c4d 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #00a14b 0%,#009c4d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a14b', endColorstr='#009c4d',GradientType=0 ); /* IE6-9 */
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:16px;
+	text-shadow: 1px 1px 1px #1e4c39;
+	text-align:center; 
+	text-decoration: none;
+	padding: 6px 16px ;
+	text-align:center;
+	cursor:pointer;
+}
+.submitTaskAddMoreBtn-link:hover {
+    
+    border: solid 1px #014625;
+	text-decoration: none;
+	/-moz-box-shadow:    0px 0px 3px 2px #CCC;
+  	-webkit-box-shadow: 0px 0px 3px 2px #ccc;
+ 	 box-shadow:         0px 0px 3px 2px #ccc;
+
+}
+.submitTaskAddMoreBtn-link:active {
     border: solid 1px #008C4A;
 	text-decoration: none;
 }
@@ -1248,6 +1311,7 @@ a.two:hover
     top: 139px;
     width: 869px;
 	z-index:9999;
+	display:none;
 }
 
 
@@ -1460,4 +1524,44 @@ label.error
 #blockkqote
 {
 	display:none;
+}
+
+#subjTextArea label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: 50px;
+    position: absolute;
+    top: 24px;
+}
+
+#descripTextArea label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: 50px;
+    position: absolute;
+    top: 24px;
+}
+
+#descripTextArea label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: 50px;
+    position: absolute;
+    top: 24px;
+}
+
+#assignTo label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: -16px;
+    position: absolute;
+    top: 46px;
 }
