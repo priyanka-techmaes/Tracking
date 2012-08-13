@@ -513,9 +513,26 @@ a.usNam:visited
 	top:30px;
 	left:-5px;
 }
+#innerTextDivReopen
+{
+	position:relative;
+	top:30px;
+	left:-5px;
+}
 	
 
 #subjTextArea
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:15px;
+	
+}
+#subjTextArea2
 {
 	position:relative;
 	left:54px;
@@ -537,7 +554,27 @@ a.usNam:visited
 	margin-bottom:-13px;
 }
 
+#descripTextArea2
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:-13px;
+}
 #attachment
+{
+	position:relative;
+	left:54px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	width:772px;
+	color:#6d6c6c;
+	margin-bottom:21px;
+}
+#attachmentReopen
 {
 	position:relative;
 	left:54px;
@@ -619,6 +656,49 @@ position: relative;
 	padding-right:0px;
 }
 
+#textarea_reopen1 
+{	border: 1px solid #FFFFFF;
+    color: #333333;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    left: -1px;
+    outline: medium none;
+    overflow: hidden;
+    resize: none;
+    width: 649px;
+	top:-10px;
+	position:relative;
+	background:none;
+	text-align:left;
+	float:right;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:57px;
+	padding-right:0px;
+}
+#textarea_reopen2 
+{	border: 1px solid #FFFFFF;
+    color: #6d6c6c;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    left: -1px;
+    outline: medium none;
+    overflow: hidden;
+    resize: none;
+    width: 649px;
+	top:-27px;
+	position:relative;
+	background:none;
+	text-align:left;
+	float:right;
+	padding-bottom:5px;
+	padding-top:5px;
+	padding-left:57px;
+	padding-right:0px;
+}
+
 #reOpenTaskPg
 {	
 	left: 512px;
@@ -679,6 +759,17 @@ position: relative;
 	margin-left:13px;
 	
 }
+#attchBoxRe 
+{
+	width:240px;
+	height:17px;
+	border:1px solid #8f8c8c;
+	padding:1px;
+	margin-left:13px;
+	
+}
+
+
 .attachBoxlabel
 {
 	width:200px;
@@ -744,12 +835,32 @@ a.cancel:hover
 	margin-bottom:38px;
 	width:772px;
 }
+#assignToRe
+{
+	
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#6d6c6c;
+	left:54px;
+	margin-bottom:38px;
+	width:772px;
+}
+
 #assignList
 {
 	left: 22px;
     position: relative;
     top: -9px;
 }
+
+#assignListRe
+{
+	left: 22px;
+    position: relative;
+    top: -9px;
+}
+
 .imgSize1
 {
 	margin-top:14px; width:30px;
@@ -851,6 +962,15 @@ a.cancel:hover
 	top:-10px;
 	width: 146px;
 }
+#priorityRe
+{
+	margin-left: 48px;
+	position:relative;
+	top:-10px;
+	width: 146px;
+}
+
+
 #reOpenTaskPg
 {
 	
@@ -1557,6 +1677,38 @@ label.error
 }
 
 #assignTo label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: -16px;
+    position: absolute;
+    top: 46px;
+}
+
+
+#subjTextArea2 label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: 50px;
+    position: absolute;
+    top: 24px;
+}
+
+#descripTextArea2 label.error
+{
+	color: red;
+   	font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	left: 50px;
+    position: absolute;
+    top: 24px;
+}
+
+
+#assignToRe label.error
 {
 	color: red;
    	font-family: Arial,Helvetica,sans-serif;

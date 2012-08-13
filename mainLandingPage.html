@@ -512,7 +512,7 @@ and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
  			<div id="closeBtn"> <a href="javascript:void(0)" onclick="hideShowPopUp('reOpenTaskPg')"><img src="Images/CloseBtn.png" alt="closeBtn"></a></div>	
             <p class="hdText" style="color:#000"> Reopen Task </p>
             
- 				<div id="innerTextDiv">
+ 				<!--<div id="innerTextDiv">
                 <form name="adfTask" action="#"> 
                 <div id="subjTextArea">
  					 Subject: 
@@ -589,7 +589,89 @@ and Check compatiblity also   from : Priyanka Kotkar <br/><br/>
 </form>
 <br/>
 <br/>
+</div>-->
+
+<div id="innerTextDivReopen">
+                <form name="reOpenTask" action="#" id="reTaskMainpage" method="post"> 
+                <div id="subjTextArea2">
+ 					 Subject: 
+ 						 <textarea id="textarea_reopen1" name="subjectRe" class="required" rows="1" placeholder="Default text from Completed Task"></textarea> 
+                         <div class="unAddTask"></div>  
+               	</div>
+                 
+                <div id="descripTextArea2">
+ 					 Description:
+ 						 <textarea id="textarea_reopen2" name="descriptionRe" rows="1" class="required" placeholder="Default text from Completed Task" ></textarea>  
+                       <div class="unAddTask2"></div><br/>
+               	</div> 
+               
+			 
+                
+                <div id="attachmentReopen"> Attachment: </div>
+  
+  <div class="attchBoxBord"> 
+  <table class="tabel1">
+ 	<tr style="height:40px;">
+ 		<td>
+        <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+        </td>
+        <td>
+        <p style="margin-left:14px;"> <a class="cancel" href="#"> To attach file from your computer </a> </p>
+        </td>
+    </tr> 
+    <tr> 
+        <td>
+ 		 <img src="Images/attachment_32.png" alt="attachment" style="width:26px;">
+         </td> 
+         <td>
+ 		<div id="attchBoxRe"> 
+ 		<div class="attachBoxlabel"> </div> 
+ 		</div>
+        </td>
+        <td> <p> <a class="cancel" href="#">Cancel File </a> </p> </td>
+    </tr>
+    </table>
+    
+   <div class="tAAFile"> 	
+   <p> <a class="cancel" href="#">To attach another file </a> </p> 
+    </div>
+ </div>
+ 
+ 	<div class="devp"> 
+ 	New Development:  <input type="radio" name="Development"  value="New development"> 
+ 	&#160;&#160;&#160;&#160;
+ 	Bug : <input type="radio" name="Development"  value="Bug">    
+ 	</div>
+    <div id="assignToRe"> 
+	 <img src="Images/1343658334_user.png" alt="users" class="imgSize1" >
+    <select id="assignListRe" name="userListNameRe" class="required">
+               <option value ="">Assign to</option>
+              	<option value = "1" >Vikas Jagtap</option>
+               <option value = "2">Vikas Abhang </option>
+               <option value = "3">Priyanka Kotkar</option>
+               <option value = "5">Amol Shirke</option>
+               <option value = "6">Pradip Kale</option>
+             </select>
+             
+	<select id = "priorityRe">
+               <option value = "1">Priority</option>
+               <option value = "2">Urgent</option>
+               <option value = "3">Days </option>
+               <option value = "4">Date</option>
+             </select>             
+    </div>
+    
+    <div class="sBtnList">
+ 	<input class="submitTaskBtn-link" type="submit" value="Submit"/>
+ 
+	<a class="cancel" href='javascript:void(0)' onclick="hideShowPopUp('reOpenTaskPg')">Cancel </a>  
+ 	</div>
+ 
+</form>
 </div>
+<br/>
+<br/>
+<br/>
 </div>
   
 

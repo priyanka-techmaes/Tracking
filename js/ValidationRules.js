@@ -68,6 +68,39 @@ $(document).ready(function(){
 		 }
 	
 	});
+
+$('#reTaskMainpage').validate({
+		
+		rules: {
+                assignListRe: {
+                    SelectNone: true
+                }
+            },
+	  
+		 messages: {
+	         
+			 subjectRe:{
+				 required:"Please Enter Subject of Task "  
+				 	},
+			 descriptionRe: {
+				required: "Please Enter Description of Task "
+						},
+						
+				userListNameRe:{
+				required: "Please select an option."
+				}
+		 }
+	
+	});
+
+
+
+
+
+
+
+
+
 })
 
     
